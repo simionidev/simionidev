@@ -1,0 +1,45 @@
+# Atualiza a seção "Meus Projetos" do README com seus repositórios do GitHub
+name: Atualizar Projetos no README
+
+on:
+  schedule:
+    - cron: "0 4 * * *"   # todo dia às 04:00 UTC (01:00 BRT)
+  workflow_dispatch:      # rodar manualmente em Actions > Atualizar Projetos no README
+  push:
+    branches: [ main ]
+    paths:
+      - ".github/workflows/update-readme-projects.yml"
+      - ".github/scripts/update-readme-projects.js"
+
+permissions:
+  contents: write
+
+jobs:
+  update-projects:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "nothing"
+
+      - name: Atualizar seção de projetos no README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.repository_owner }}
+        run: node .github/scripts/update-readme-projects.js
+
+      - name: Abrir Pull Request para você revisar
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: update-readme-projects
+          commit-message: "chore: atualizar lista de projetos no README [automated]"
+          title: "🔄 Atualizar lista de projetos no README"
+          body: |
+            Lista de projetos gerada automaticamente. **Revise o diff** na aba "Files changed" e faça merge quando estiver ok.
+          delete-branch: true

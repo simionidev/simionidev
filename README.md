@@ -34,6 +34,15 @@
 </td></tr></table>
 <br/><br/>
 
+# 🗂️ Meus Projetos
+
+*Lista gerada automaticamente a partir dos repositórios do GitHub.*
+
+<!-- PROJECTS_START -->
+<!-- PROJECTS_END -->
+
+<br/><br/>
+
 # 📊 Estatisticas do GitHub
 
 ![Profile Details](./profile-summary-card-output/city_lights/0-profile-details.svg)
@@ -46,7 +55,7 @@
 # 📫 Vamos Nos Conectar? 
 
 <div align="center">
-<a href="[https://www.linkedin.com/in/thiagolemoos/](https://www.linkedin.com/in/pedro-henrique-simioni-067169204/)" target="_blank">
+<a href="https://www.linkedin.com/in/pedro-henrique-simioni-067169204/" target="_blank">
 <img src="https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt=linkedin style="margin-bottom: 5px;" />
 </a>   
 </div>  
