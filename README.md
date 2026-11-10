@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=8BE9FD&size=35&center=true&vCenter=true&width=1000&lines=Hello,+my+name+is+Pedro+Simioni;I'm+22+years+old;I'm+from+Santo+André,+SP;I'm+an+DevOps+Engineer;Be+Welcome!+:%29)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=8BE9FD&size=35&center=true&vCenter=true&width=1000&lines=Hello,+my+name+is+Pedro+Simioni;I'm+23+years+old;I'm+from+Santo+André,+SP;I'm+an+IT+Security+Engineer;Be+Welcome!+:%29)](https://git.io/typing-svg)
 
 
 # 📝Sobre Mim
